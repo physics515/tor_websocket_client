@@ -1,0 +1,18 @@
+[package]
+name = "tor_websocket_client"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.0", features = ["full"] }
+balens_log = { git = "https://github.com/basic-automation/balens-log" }
+hyper = { version = "1", features = ["full"] }
+arti-client = { version = "0", features = ["full", "static"] }
+native-tls = "0"
+tokio-native-tls = "0"
+h2 = "0"
+hyper-util = { version = "0", features = ["full"] }
+http-body-util = "0"
+futures = "0"
+tokio-tungstenite = { version = "0", features = ["native-tls"] }
+tracing-subscriber = { version = "0", features = ["env-filter"] }
